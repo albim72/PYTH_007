@@ -42,6 +42,9 @@ def srednia(lista: list) -> float:
         raise ValueError("lista pusta!")
     return sum(lista)/len(lista)
 
+#funkcja anonimowa
+szescian = lambda x: x**3 + 2*x**2 - 3*x + 1
+
 
 if __name__ == '__main__':
     print("__________ funkcja powitanie ___________")
@@ -78,3 +81,7 @@ if __name__ == '__main__':
         print(f"srednia([]) -> {srednia([]):.2f}")
     except ValueError as e:
         print(e)
+
+    print("__________ funkcja anonimowa ___________")
+    print(f"szescian(3) -> {szescian(3)}")
+    print(f"szescian(7.7) -> {szescian(7.7)}")
