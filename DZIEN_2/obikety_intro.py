@@ -7,3 +7,16 @@ class Samochod:
 auto = Samochod("BMW","5")
 print(auto.marka)
 print(auto.model)
+
+#metoda w klasie
+class Prostokat:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+
+    def pole(self):
+        return self.a*self.b
+
+p = Prostokat(2,3)
+print(p.pole())
+
