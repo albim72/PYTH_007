@@ -11,6 +11,10 @@ def powitanie():
 def kwadrat(x):
     return x**2
 
+#funkcja z dwoma argumentami
+def suma(a,b):
+    return a+b
+
 
 if __name__ == '__main__':
     print("__________ funkcja powitanie ___________")
@@ -21,3 +25,7 @@ if __name__ == '__main__':
     print(kwadrat(1.567))
     z = kwadrat(4)
     print(z)
+    print("__________ funkcja suma ___________")
+    print(suma(1,2))
+    print(suma(1.5,2.5))
+    print(suma(-1,-2))
