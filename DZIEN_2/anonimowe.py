@@ -6,7 +6,7 @@ print((lambda a,b: a-b+1)(3,7))
 ocent = [('Kasia', 5), ('Marek', 3), ('Anna', 4)]
 
 #sortujemy po ocenie
-posortowane = sorted(ocent, key=lambda x: x[1])
+posortowane = sorted(ocent, key=lambda x: x[1], reverse=True)
 print(posortowane)
 
 #filtrowanie liczb parzystych z listy
