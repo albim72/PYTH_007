@@ -1,11 +1,8 @@
-# import dane
-# import dane as dn
+
 import math
 import copy
 
-from dane import liczby,leader,MC as m,kolor
-from mfunkcje.kwadraty import kwadrat,parzyste,slownik
-from mojpakiet import Osoba
+from mojpakiet import Osoba,liczby,leader,m,kolor,kwadrat,parzyste,slownik
 
 
 print("_"*60)
