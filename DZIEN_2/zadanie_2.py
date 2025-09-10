@@ -51,3 +51,6 @@ if __name__ == "__main__":
     print(konto)             # Konto właściciela: Jan, saldo: 1500
     konto.withdraw(2000)     # Za mało środków!
     print(konto)             # Konto właściciela: Jan, saldo: 1500
+
+    konto.withdraw(270)
+    print(konto)  
