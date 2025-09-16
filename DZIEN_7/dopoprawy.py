@@ -5,18 +5,18 @@ class Book:
     def __init__(self, title, author, price):
         self.title = title
         self.author = author
-        self._price = price  # BUG 1: brak walidacji ujemnej ceny
+        self._price = price  
 
     @property
     def price(self):
-        return self.price  # BUG 2: nieskończona rekursja!
+        return self.price  
 
     @price.setter
     def price(self, value):
         self._price = value
 
 class Member:
-    def __init__(self, name, borrowed=[]):  # BUG 3: mutowalny argument domyślny
+    def __init__(self, name, borrowed=[]):  
         self.name = name
         self.borrowed = borrowed
 
@@ -32,14 +32,14 @@ class Library:
 
     def lend(self, title, member):
         if title in self.books:
-            member.borrow(title)  # BUG 4: dodaje string zamiast obiektu Book
+            member.borrow(title)  
             del self.books[title]
         else:
             print("Brak książki!")
 
 # Program testowy
 lib = Library()
-b1 = Book("Python 101", "A. Author", -50)  # BUG 5: cena ujemna, a nie zgłasza błędu
+b1 = Book("Python 101", "A. Author", -50) 
 m1 = Member("Anna")
 
 lib.add_book(b1)
