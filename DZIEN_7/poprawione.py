@@ -51,3 +51,12 @@ if __name__ == "__main__":
     lib = Library()
     b1 = Book("Python 101", "A. Author", 50)  # popraw
     print(b1)
+
+"""
+Lista błędów do poprawy
+Book.__init__ pozwala na ujemną cenę (brak walidacji).
+Book.price getter robi rekursję (powinien zwrócić self._price).
+Member.__init__ używa mutowalnej listy jako argumentu domyślnego (wszyscy członkowie dzielą tę samą listę).
+Library.lend dodaje do borrowed tytuł (string), zamiast obiektu Book.
+W kodzie testowym tworzona jest książka z ujemną ceną, która powinna rzucić wyjątek.
+"""
